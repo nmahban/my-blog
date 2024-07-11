@@ -24,24 +24,3 @@ const contentName = localStorage.getItem(`content-name`);
 document.getElementById(`user-name`).textContent = userName;
 document.getElementById(`title-name`).textContent = titleName;
 document.getElementById(`content-name`).textContent = contentName;
-
-const inpKey = document.getElementById("inpKey");
-const inpValue = document.getElementById("inpValue");
-const btnInsert = document.getElementById("btnInsert");
-const blogOutput = document.getElementById("blogOutput");
-
-btnInsert.onclick = function () {
-  const key = inpkey.value;
-  const value = inpValue.value;
-
-  if (key && value) {
-    localStorage.setItem(key, value);
-    location.reload();
-  }
-};
-
-for (let i = 0; i < localStorage.length; i++) {
-  const key = localStorage.key(i);
-  const value = localStorage.getItem(key);
-  blogOutput.innerHTML += `${key}: ${value}<br />`;
-}
