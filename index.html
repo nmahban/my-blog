@@ -3,7 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>What's on your mind</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/form.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container dark">
+      <div class="col"></div>
+      <label class="switch col">
+        <input type="checkbox" id="theme-switcher" />
+        <span class="slider round"></span>
+      </label>
+      <img
+        src="assets/images/blog.png"
+        alt="a sign stating Welcome to my Blog"
+        id="my-image"
+      />
+      <br />
+      <hr />
+      <h1>What's on your mind?</h1>
+      <form id="form">
+        <div>
+          <br /><label for="username">Username:</label><br />
+          <input id="username" type-="text" />
+        </div>
+        <div>
+          <br /><br />
+          <label for="title">Title:</label><br />
+          <input id="title" type="text" /><br /><br />
+        </div>
+        <div>
+          <label for="content">Content:</label><br />
+          <input id="content" type="text" /><br /><br />
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <br />
+      <hr />
+      <div class="col"></div>
+      <div class="row"></div>
+      <div class="row"></div>
+    </div>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/blog.js"></script>
+  </body>
 </html>
